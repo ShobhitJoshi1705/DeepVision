@@ -5,7 +5,7 @@ MNIST Digit Recognizer with Flask & PyTorch
 A web application that recognizes handwritten digits (0-9) using a Convolutional Neural Network (CNN) built with PyTorch and deployed via Flask.
 
 Project Structure
-
+```
 mnist_project/
 ├── model.py           # Defines the Neural Network architecture
 ├── train.py           # Script to train the model and save weights
@@ -13,34 +13,34 @@ mnist_project/
 ├── requirements.txt   # List of dependencies
 └── templates/
     └── index.html     # Frontend UI for image upload
-
+```
 
 Installation
 
 Clone the repository (or create the folder structure manually).
 
 Install dependencies:
-
+```
 pip install -r requirements.txt
-
+```
 
 Usage
 
 1. Train the Model
 
 Before running the app, you must generate the model weights file (mnist_cnn.pth).
-
+```
 python train.py
-
+```
 
 What this does: Downloads the MNIST dataset, trains the CNN for 3 epochs, and saves the learned parameters to mnist_cnn.pth.
 
 2. Run the Web Application
 
 Start the Flask development server:
-
+```
 python app.py
-
+```
 
 Access: Open your browser and go to http://127.0.0.1:5000.
 
